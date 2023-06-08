@@ -1,0 +1,119 @@
+{
+	"info": {
+		"_postman_id": "6660f5ef-ac1e-4859-884f-b8c350d84a75",
+		"name": "Testes API LPBD",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Predios",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3002/predios",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"predios"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Predio",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nome\" : \"Prédio 6\",\n    \"descricao\" : \"Prédio novo\", \n    \"sigla\" : \"P6\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3002/predios",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"predios"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Prédio",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"codigo\": 3,\n        \"nome\": \"Predio Alterado\",\n        \"descricao\": \"Predio velho\",\n        \"sigla\": \"P8\"\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3002/predios",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"predios"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get predios por código",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3002/predios/2",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"predios",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete predio",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:3002/predios/4",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"predios",
+						"4"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
